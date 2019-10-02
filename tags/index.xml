@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blog</title>
+    <title>Tags on Home</title>
     <link>https://k3nz0.github.io/tags/</link>
-    <description>Recent content in Tags on Blog</description>
+    <description>Recent content in Tags on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 29 Sep 2019 13:11:59 +0200</lastBuildDate>
     
 	<atom:link href="https://k3nz0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blockchain</title>
+      <link>https://k3nz0.github.io/tags/blockchain/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ethereum</title>
+      <link>https://k3nz0.github.io/tags/ethereum/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gas</title>
+      <link>https://k3nz0.github.io/tags/gas/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/tags/gas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>miner</title>
+      <link>https://k3nz0.github.io/tags/miner/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/tags/miner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solidity</title>
+      <link>https://k3nz0.github.io/tags/solidity/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/tags/solidity/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

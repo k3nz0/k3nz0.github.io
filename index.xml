@@ -1,14 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog</title>
+    <title>Home</title>
     <link>https://k3nz0.github.io/</link>
-    <description>Recent content on Blog</description>
+    <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 29 Sep 2019 13:11:59 +0200</lastBuildDate>
     
 	<atom:link href="https://k3nz0.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A novice introduction to Ethereum (Part 1 / 2)</title>
+      <link>https://k3nz0.github.io/posts/ethereum-intro1/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/posts/ethereum-intro1/</guid>
+      <description>If you are new to Ethereum and want to quickly understand what&amp;rsquo;s going on, you&amp;rsquo;re on the right track. This post is exclusively made for you !
+By the end of Part 1, you&amp;rsquo;ll be able to understand the key concepts of Ethereum!</description>
+    </item>
+    
+    <item>
+      <title>A novice introduction to Ethereum (Part 2 / 2)</title>
+      <link>https://k3nz0.github.io/posts/ethereum-intro2/</link>
+      <pubDate>Sun, 29 Sep 2019 13:11:59 +0200</pubDate>
+      
+      <guid>https://k3nz0.github.io/posts/ethereum-intro2/</guid>
+      <description>In this post, we&amp;rsquo;ll get our hands dirty.
+We&amp;rsquo;ll code our own smart contract, compile it, deploy it on the Ethereum blockchain test network, and play with it !</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://k3nz0.github.io/about/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://k3nz0.github.io/about/</guid>
+      <description>Hi there. I’m Moez, online handle k3nz0, and this is a blog where I post just about magic (i.e code &amp;amp; technology).
+I like algorithms, computer science, computer security, so I&amp;rsquo;ll probably post about these topics.</description>
+    </item>
+    
+    <item>
+      <title>SnakeSFML</title>
+      <link>https://k3nz0.github.io/portfolio/snake/</link>
+      <pubDate>Thu, 23 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://k3nz0.github.io/portfolio/snake/</guid>
+      <description>SnakeSFML is a Snake game developed in C++ and is available in 3 modes (Easy - Medium - Hard).
+SnakeSFML uses SFML which is a simple, fast, and cross-platform multimedia API provinding access to windowing, graphics, audio and network.</description>
+    </item>
+    
+    <item>
+      <title>Pixel-ART</title>
+      <link>https://k3nz0.github.io/portfolio/pixel-art/</link>
+      <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://k3nz0.github.io/portfolio/pixel-art/</guid>
+      <description>Pixel-ART simply lets you pixel art your face and optionally add random fancy eyes on it. The technique used is pretty simple;
+We colorized each grid of (N, N) pixels with the same color.</description>
+    </item>
     
   </channel>
 </rss>
