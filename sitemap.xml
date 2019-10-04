@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://k3nz0.github.io/posts/concurrent-ds/</loc>
+    <lastmod>2019-10-04T11:31:25+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://k3nz0.github.io/posts/ethereum-intro1/</loc>
     <lastmod>2019-09-29T13:11:59+02:00</lastmod>
   </url>
@@ -10,6 +15,16 @@
   <url>
     <loc>https://k3nz0.github.io/posts/ethereum-intro2/</loc>
     <lastmod>2019-09-29T13:11:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://k3nz0.github.io/</loc>
+    <lastmod>2019-10-04T11:31:25+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://k3nz0.github.io/posts/</loc>
+    <lastmod>2019-10-04T11:31:25+02:00</lastmod>
   </url>
   
   <url>
@@ -28,17 +43,7 @@
   </url>
   
   <url>
-    <loc>https://k3nz0.github.io/</loc>
-    <lastmod>2019-09-29T13:11:59+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://k3nz0.github.io/tags/miner/</loc>
-    <lastmod>2019-09-29T13:11:59+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://k3nz0.github.io/posts/</loc>
     <lastmod>2019-09-29T13:11:59+02:00</lastmod>
   </url>
   
