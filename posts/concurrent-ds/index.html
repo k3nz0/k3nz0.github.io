@@ -213,7 +213,7 @@ removes an item from the Set and returns <span style="color:green">true</span> i
 returns <span style="color:green">true</span> if the item exists, <span style="color:red">false</span> otherwise.</li>
 </ul>
 
-<p><strong>Note that all items should comparable (i.e there is a <a href="https://en.wikipedia.org/wiki/Total_order">total order</a> on the set of all the items), otherwise sorting has no meaning.</strong></p>
+<p><strong>Note that all items should be comparable (i.e there is a <a href="https://en.wikipedia.org/wiki/Total_order">total order</a> on the set of all items), otherwise sorting has no meaning.</strong></p>
 
 <h1 id="system-details">System details</h1>
 
@@ -232,7 +232,7 @@ If a  synchronization  conflict  causes  the  wrong  nodes  to  be  locked,  we 
 
 <p>In order to test the efficiency of these algorithms, we run them through a serie of tests and depict the throughput as a function of the number of threads varying the update ratio.</p>
 
-<p>For  the  next  analyses,  we’ll  run  the  4  algorithms  on  a  linked-list  with size= 1000 and check the results for update ratios 0%, 10% and 100%.  The duration of the benchmark is set to 2 seconds.</p>
+<p>For  the  next  analysis,  we’ll  run  the  4  algorithms  on  a  linked-list  with size= 1000 and check the results for update ratios 0%, 10% and 100%.  The duration of the benchmark is set to 2 seconds.</p>
 
 <h2 id="coarse-grained">Coarse-grained</h2>
 
