@@ -17,7 +17,7 @@
       <pubDate>Fri, 04 Oct 2019 11:31:25 +0200</pubDate>
       
       <guid>https://k3nz0.github.io/posts/concurrent-ds/</guid>
-      <description>Introduciton Concurrent data structures if implemented carefully can lead to a huge increases in performance.
+      <description>Introduction Concurrent data structures if implemented carefully can lead to a huge increases in performance.
 In this post, we&amp;rsquo;ll try to show that with fancy plots!
 We will implement and run benchmarks on different lock-based algorithms.</description>
     </item>
