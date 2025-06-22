@@ -22,7 +22,7 @@ title: magic stack:~/
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A home for my notes and thoughts.
-  
+
 # Build settings
 theme: minima
 plugins:
@@ -57,46 +57,50 @@ plugins:
 #   `minima` key.*
 #
 minima:
-#   Minima skin selection. Available skins are:
-#     * classic            Default, light color scheme.
-#     * dark               Dark variant of the classic skin.
-#     * auto               Adaptive skin based on the classic and dark skins.
-#     * solarized-light    Light variant of solarized color scheme.
-#     * solarized-dark     Dark variant of solarized color scheme.
-#     * solarized          Adaptive skin for solarized color scheme skins.
-   skin: solarized-light
-#
-#   Specific pages for site navigation.
-#     If you wish to link only specific pages in the site-navigation, use this
-#     and list the `path` property (as represented via Liquid) of the pages in
-#     the order they should be rendered.
-#   nav_pages:
-#     - about.md
-#
-#   Set to `true` to show excerpts on the homepage.
-   show_excerpts: false
-#
-#   Minima date format.
-#     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
-#     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
-#   date_format: "%b-%d-%Y"
-#
-#   Social Media Links.
-#     Renders icons via Font Awesome Free webfonts CDN, based on ordered list of
-#     entries. Valid entry keys:
-#       * title    Tooltip rendered on hovering over icon.
-#       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
-#       * url      Full URL of social profile.
-   social_links:
-     - title: GitHub
-       icon: github
-       url: "https://github.com/k3nz0"
-     - title: X 
-       icon: x-twitter
-       url: "https://x.com/k3nz0x"
-#
-#   Hide syndication feed subscription link.
-#     RSS / Atom feed link is always rendered as the last item of social-links
-#     list. Set below key to `true` to not have the link to feed rendered as
-#     part of social-links list.
-   hide_site_feed_link: true
+  #   Minima skin selection. Available skins are:
+  #     * classic            Default, light color scheme.
+  #     * dark               Dark variant of the classic skin.
+  #     * auto               Adaptive skin based on the classic and dark skins.
+  #     * solarized-light    Light variant of solarized color scheme.
+  #     * solarized-dark     Dark variant of solarized color scheme.
+  #     * solarized          Adaptive skin for solarized color scheme skins.
+  skin: solarized-light
+  #
+  #   Specific pages for site navigation.
+  #     If you wish to link only specific pages in the site-navigation, use this
+  #     and list the `path` property (as represented via Liquid) of the pages in
+  #     the order they should be rendered.
+  #   nav_pages:
+  #     - about.md
+  #
+  #   Set to `true` to show excerpts on the homepage.
+  show_excerpts: false
+  #
+  #   Minima date format.
+  #     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
+  #     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
+  #   date_format: "%b-%d-%Y"
+  #
+  #   Social Media Links.
+  #     Renders icons via Font Awesome Free webfonts CDN, based on ordered list of
+  #     entries. Valid entry keys:
+  #       * title    Tooltip rendered on hovering over icon.
+  #       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
+  #       * url      Full URL of social profile.
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/k3nz0"
+    - title: X
+      icon: x-twitter
+      url: "https://x.com/k3nz0x"
+  #
+  #   Hide syndication feed subscription link.
+  #     RSS / Atom feed link is always rendered as the last item of social-links
+  #     list. Set below key to `true` to not have the link to feed rendered as
+  #     part of social-links list.
+  hide_site_feed_link: true
+
+google:
+  tag_manager:
+    container_id: GTM-NR8XVC68
