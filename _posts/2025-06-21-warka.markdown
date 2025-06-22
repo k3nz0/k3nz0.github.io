@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introducing Warka"
-date:   2025-06-22 17:25:44 +0200
+date:   2025-06-21 17:25:44 +0200
 categories: hacking 
 ---
 
