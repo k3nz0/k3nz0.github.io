@@ -119,7 +119,7 @@ For the sake of the demo, I used random data to fill the portfolio overview.
 ![Warka](/assets/images/warka/examples/warka2.jpg)
 
 ### Warka - Daft Punk refresh
-<iframe width="480" height="800" src="http://www.youtube.com/embed/aL0Z7EtoWpk" frameborder="0"> </iframe>
+<iframe width="480" height="800" src="https://www.youtube.com/embed/aL0Z7EtoWpk" frameborder="0"> </iframe>
 
 ### Warka - Screensavers
 ![Paris](/assets/images/warka/examples/paris.jpg)
