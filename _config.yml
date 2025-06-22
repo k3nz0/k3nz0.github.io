@@ -107,6 +107,6 @@ minima:
 
 analytics:
   provider: "google-gtag"
-    google:
-      tracking_id: "GTM-NR8XVC68"
-      anonymize_ip: false # default  
+  google:
+    tracking_id: "GTM-NR8XVC68"
+    anonymize_ip: false # default  
