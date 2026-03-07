@@ -2,7 +2,7 @@
 layout: post
 title:  "39C3: Power Cycles"
 date:   2026-03-07 21:30:44 +0100
-categories: jekyll update
+categories: conferences
 ---
 
 # 39C3: Power Cycles
