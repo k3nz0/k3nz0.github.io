@@ -107,7 +107,7 @@ If defenders are automating with AI, attackers already are too.
 
 I didn't expect this to be the thing I kept thinking about after Congress. But here we are.
 
-Between the hardware talk on Day 1 and the soldering workshops scattered across the venue, something clicked. Congress had SMD soldering stations set up where you could sit down, grab a kit, and just build. There's something deeply satisfying about a physical thing you assembled with your hands actually working. No deployment pipeline, no CI, no YAML. Just flux, solder, and a blinking LED.
+Between the hardware talk on Day 1 and the soldering workshops scattered across the venue, something clicked. Congress had soldering stations set up where you could sit down, grab a kit, and just build. There's something deeply satisfying about a physical thing you assembled with your hands actually working. No deployment pipeline, no CI, no YAML. Just flux, solder, and a blinking LED.
 
 I bought a couple of soldering kits before I left Hamburg. I'm planning to work through them at home and get back into hardware projects. Congress has a way of reminding you that building things with your hands is still incredibly satisfying.
 
