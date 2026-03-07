@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introducing Warka"
+title:  "39C3: Power Cycles"
 date:   2026-03-7 21:30:44 +0100
 categories: jekyll update
 ---
@@ -18,7 +18,7 @@ All talks are up at [media.ccc.de/c/39c3](https://media.ccc.de/c/39c3). Here's w
 
 ## Day 1
 
-<center><img src="/assets/images/39c3/rocket_entrance.jpeg"/></center>
+<center><img style="max-width:50%" src="/assets/images/39c3/rocket_entrance.jpeg"/></center>
 <center><em>Day 1: rocket entrance</em></center>
 
 ### Breaching the Great Firewall
