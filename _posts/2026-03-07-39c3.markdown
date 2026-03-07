@@ -22,28 +22,33 @@ All talks are up at [media.ccc.de/c/39c3](https://media.ccc.de/c/39c3). Here's w
 <center><em>Day 1: Rocket Entrance</em></center>
 
 ### Breaching the Great Firewall
+[[Video]](https://media.ccc.de/v/39c3-a-tale-of-two-leaks-how-hackers-breached-the-great)
 
 "A Tale of Two Leaks" opened the congress. Researchers exploited a memory vulnerability in China's DNS injectors (they called it "Wallbleed") and pulled traffic data from both inside and outside the firewall. They basically turned China's surveillance infrastructure against itself. The Geedge network part came from a leaked 600GB dump of GFW source code from a Chinese cybersecurity firm.
 
 Surveillance tools have bugs too.
 
 ### The Hardware Itch
+[[Video]](https://media.ccc.de/v/39c3-building-hardware-easier-than-ever-harder-than-it-should-be)
 
 A session on building hardware stripped away all the mystique. The presenter broke down how accessible it's become to design and manufacture your own boards. I haven't touched a soldering iron in years, but this talk lit something up (more on that later).
 
 ### Meds, Money, and the Patent Cliff
+[[Video]](https://media.ccc.de/v/39c3-developing-new-medicines-in-the-age-of-ai-and-personalized-medicine)
 
 One of the most surprising talks had nothing to do with code. A medicine costing $1 to $5 to produce often sells for ~$1,000 in the US (vs ~$100 in Europe). The gap is almost entirely patents.
 
 The good news: 20% of those patents expire in the next 5 years. Expect prices to crater for several major drugs.
 
 ### Hacking Washing Machines
+[[Video]](https://media.ccc.de/v/39c3-hacking-washing-machines)
 
 Highlight of the day. Researchers reverse-engineered Miele and B/S/H firmware using **optical bicommunication** (yes, reading data through light pulses). They bolted together a chain of tools that lets you control Miele washing machines through the BSH app.
 
 Your laundry is not safe.
 
 ### Bluetooth Headphone Jacking
+[[Video]](https://media.ccc.de/v/39c3-bluetooth-headphone-jacking-a-key-to-your-phone)
 
 This demo was genuinely terrifying. Researchers extracted memory from Sony Bluetooth headphones, then impersonated the headphones to call Siri from a laptop.
 
@@ -56,6 +61,7 @@ The full kill chain: impersonate headphones, trigger Siri, make a call, answer i
 
 
 ### Don't Look Up (It's Unencrypted)
+[[Video]](https://media.ccc.de/v/39c3-don-t-look-up-there-are-sensitive-internal-links-in-the-clear-on-geo-satellites)
 
 Classic CCC energy. A team built a parabolic dish to eavesdrop on GEO satellites. Unsurprisingly, they found mountains of unencrypted traffic.
 
@@ -66,12 +72,14 @@ They picked up unencrypted Mexican military communications, including GPS coordi
 The assumption that "nobody can hear us up there" is spectacularly wrong.
 
 ### Chinese App Crypto (or Lack Thereof)
+*Not recorded.*
 
 WeChat rolls its own encryption protocol (mmtls) instead of standard TLS. Many Chinese IME apps (the software that lets you type Chinese characters on a small keyboard) use cloud-based predictors that send your keystrokes over plain HTTP.
 
 Researchers built scrapers for Chinese app stores, used a tiny LLM to click through the apps, and sniffed for unencrypted connections. Result: ~50% of apps were leaking data.
 
 ### Robot Jailbreaks
+[[Video]](https://media.ccc.de/v/39c3-skynet-starter-kit-from-embodied-ai-jailbreak-to-remote-takeover-of-humanoid-robots)
 
 The "Skynet Starter Kit" talk: researchers bought a cheap Unitree "AIR" robot dog and jailbroke it. Hilarious and unsettling. Embodied AI is coming, and it's about as secure as your Wi-Fi connected toaster.
 
@@ -81,12 +89,14 @@ The "Skynet Starter Kit" talk: researchers bought a cheap Unitree "AIR" robot do
 <center><em>Day 3: Transistor</em></center>
 
 ### AI Agent, AI Spy
+[[Video]](https://media.ccc.de/v/39c3-ai-agent-ai-spy)
 
 This one hit close to home. The talk argued that the shift from traditional OS tools to agentic systems opens the door to active surveillance.
 
 The core problem: prompt injection can instruct an AI agent to use its own legitimate tools to exfiltrate credentials. The agent sees a valid request from an authorized source. It complies. This is the Confused Deputy Problem, and it's probably unsolvable in current LLM architectures.
 
 ### The $151k CPU Bug
+[[Video]](https://media.ccc.de/v/39c3-spectre-in-the-real-world-leaking-your-private-data-from-the-cloud-with-cpu-vulnerabilities)
 
 Google paid $151,151 for this one. A CPU vulnerability that bypasses VM isolation in cloud environments. The presenter demoed leaking a private key from a victim's VM (running nginx) by exploiting shared physical hardware.
 
@@ -98,6 +108,7 @@ Cloud providers pack multiple customer VMs onto the same CPUs. The isolation is 
 <center><em>Day 4: Red Rocket</em></center>
 
 ### AI Speed-Running Defense
+[[Video]](https://media.ccc.de/v/39c3-breaking-bots-cheating-at-blue-team-ctfs-with-ai-speed-runs)
 
 The congress closed with "Breaking BOTS," about using AI to speed-run Blue Team CTFs. They wired Claude Code into Splunk to automate security investigations.
 
