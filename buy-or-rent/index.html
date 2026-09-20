@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Louer ou acheter — Simulateur immobilier</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%232b4b40'/%3E%3Cpath d='M12 24L24 13L36 24V36H27V27H21V36H12Z' fill='%23f6f5f0'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">SIMULATEUR IMMOBILIER</p><h1><span style="color: var(--green)">Acheter</span> ou <span style="color: var(--rust)">louer</span> ?</h1></div>
+      <div class="intro-copy"><p>Acheter votre résidence principale ou louer en plaçant votre épargne ? Comparez les deux options avec vos chiffres et faites varier les hypothèses.</p><span class="privacy"><span></span> Calculs locaux · valeurs par défaut à chaque ouverture</span></div>
+    </section>
+    <div class="workspace">
+      <aside class="controls" aria-label="Hypothèses de simulation">
+        <div class="controls-heading"><h2>Vos hypothèses</h2><button id="reset" class="button subtle" type="button">Réinitialiser</button></div>
+        <form id="assumptions" novalidate>
+          <details open><summary><span><b>01</b> L’achat</span><span class="chevron">+</span></summary><div class="field-group" id="purchase-fields"></div></details>
+          <details open><summary><span><b>02</b> Le crédit immobilier</span><span class="chevron">+</span></summary><div class="field-group" id="mortgage-fields"></div></details>
+          <details><summary><span><b>03</b> Loyers et charges</span><span class="chevron">+</span></summary><div class="field-group" id="cost-fields"></div></details>
+          <details><summary><span><b>04</b> Épargne et rendements</span><span class="chevron">+</span></summary><div class="field-group" id="wealth-fields"></div></details>
+        </form>
+        <p class="sidebar-footnote">Aucune connexion bancaire ni donnée de marché en temps réel.<br>Les taux et loyers sont à vérifier.</p>
+      </aside>
+      <section class="results" aria-label="Résultats de la simulation">
+        <div class="horizon-bar"><div><label for="years">Votre horizon</label><span>Combien de temps garderiez-vous ce bien ?</span></div><div class="horizon-control"><input id="years" type="range" min="1" max="40" step="1" value="10"><output id="years-value" for="years">10 ans</output></div></div>
+        <div id="validation" class="validation" role="alert" hidden></div>
+        <div id="result-content">
+          <section class="verdict" aria-live="polite" aria-atomic="true"><div><p class="eyebrow" id="verdict-label">AU BOUT DE 10 ANS</p><h2 id="verdict-title"></h2><p id="verdict-copy"></p></div><div class="verdict-amount"><span id="advantage"></span><span>écart de patrimoine simulé</span></div></section>
+          <div class="metric-grid">
+            <article class="metric"><span class="metric-label">ACHAT · PATRIMOINE NET ESTIMÉ</span><strong id="buyer-wealth"></strong><small>Placements + liquidités + produit net de revente</small></article>
+            <article class="metric"><span class="metric-label">LOCATION · PATRIMOINE NET ESTIMÉ</span><strong id="renter-wealth"></strong><small>Placements + réserve de liquidités</small></article>
+            <article class="metric"><span class="metric-label">DÉPENSES MENSUELLES À L’ACHAT</span><strong id="monthly-buy"></strong><small id="monthly-detail"></small></article>
+          </div>
+          <section class="panel chart-panel">
+            <div class="section-heading"><div><p class="eyebrow">SUR LA DURÉE</p><h2>Deux trajectoires patrimoniales</h2></div><div class="legend"><span><i class="buy-dot"></i> Achat</span><span><i class="rent-dot"></i> Location + placements</span></div></div>
+            <div id="wealth-chart" class="chart"></div>
+            <div class="chart-footer"><span id="crossover"></span><span>Euros courants · après revente hypothétique du bien</span></div>
+            <details class="chart-data"><summary>Voir les chiffres annuels / version accessible du graphique</summary><div class="table-scroll" id="yearly-table"></div></details>
+          </section>
+          <div class="two-col">
+            <section class="panel allocation"><p class="eyebrow">LE JOUR DE L’ACHAT</p><h2>La répartition de votre épargne</h2><div id="allocation-bar" class="allocation-bar" aria-hidden="true"></div><div id="allocation-list"></div><p class="fine-print">L’apport devient du capital immobilier. Les frais, travaux initiaux et impôts liés à la vente de placements sont considérés comme dépensés.</p></section>
+            <section class="panel cashflow"><p class="eyebrow">LE PREMIER MOIS</p><h2>Votre budget mensuel</h2><div id="cashflow-list"></div><div class="cashflow-callout" id="monthly-saving"></div><p class="fine-print">Les charges locatives et dépenses courantes communes aux deux options sont exclues. Ne saisissez que les dépenses supplémentaires propres au propriétaire.</p></section>
+          </div>
+          <section class="panel sensitivity"><div class="section-heading"><div><p class="eyebrow">NE MISEZ PAS TOUT SUR UNE HYPOTHÈSE</p><h2>Et si les rendements changeaient ?</h2></div><span class="tag" id="sensitivity-horizon"></span></div><p class="section-copy">Patrimoine à l’achat moins patrimoine en location, à l’horizon choisi. Un écart positif favorise l’achat ; un écart négatif favorise la location. Les autres hypothèses restent identiques.</p><div id="sensitivity-table" class="table-scroll"></div><p class="fine-print">Lignes : rendement annuel des placements, net de frais et d’impôts. Colonnes : évolution annuelle du prix du bien. Case encadrée : vos hypothèses actuelles.</p></section>
+          <section class="panel financing"><div><p class="eyebrow">UNE AUTRE QUESTION</p><h2>Le financement est-il adapté ?</h2></div><div id="financing-content"></div></section>
+          <details class="methodology"><summary>Comprendre le modèle, ses hypothèses et ses limites <span>↗</span></summary><div>
+            <h3>Un même point de départ</h3><p>Les deux options partent de la même épargne et de la même réserve de liquidités. L’acheteur finance l’apport, les frais d’acquisition, les frais de crédit, les travaux initiaux et les éventuels impôts saisis sur la vente de placements. Le locataire conserve ces sommes investies. Chaque mois, celui dont le logement coûte le moins cher place la différence au même rendement supposé. L’épargne supplémentaire commune aux deux options, issue notamment des futurs salaires ou attributions d’actions, n’est pas incluse car elle s’annule dans la comparaison. Les patrimoines affichés n’intègrent donc pas cette épargne future commune.</p>
+            <h3>Des calculs mensuels</h3><p>Le prêt est un crédit amortissable à taux fixe, avec un taux mensuel égal au taux annuel nominal divisé par 12. L’assurance emprunteur est calculée sur le capital initial et s’arrête à la fin du prêt. Les rendements des placements et les évolutions des prix immobiliers, loyers et charges sont composés chaque mois à partir des hypothèses annuelles effectives. Les mensualités cessent à la fin du crédit. Les versements sont investis en fin de mois. La réserve de liquidités rapporte 0 % dans les deux options.</p>
+            <h3>Ce que signifie « patrimoine net »</h3><p>Pour l’acheteur : placements restants + réserve de liquidités + valeur du bien − capital restant dû − frais de revente supposés. Les frais de revente sont déduits à chaque point du graphique, dès l’année zéro, ce qui pénalise initialement l’achat. Pour le locataire : placements + réserve de liquidités. Si la revente ne suffit pas à rembourser le prêt, le solde négatif est bien pris en compte. Les travaux initiaux et l’ameublement sont comptés comme des dépenses, sans hausse automatique de la valeur de revente. Tous les montants sont exprimés en euros courants, sans correction de l’inflation.</p>
+            <h3>Fiscalité et frais de transaction</h3><p>Le rendement des placements doit être estimé net de frais et d’impôts selon votre situation. Ce simulateur ne calcule pas la fiscalité propre au PEA ou au CTO. Saisissez séparément les impôts supplémentaires déclenchés par la vente de placements pour financer l’achat. Aucun impôt n’est appliqué à la revente du logement, en supposant que l’exonération de plus-value sur la résidence principale s’applique. Les indemnités de remboursement anticipé, restitutions de garantie, frais de déménagement du locataire et coût d’opportunité du dépôt de garantie ne sont pas modélisés séparément. Intégrez les travaux prévisibles aux dépenses concernées ; les imprévus ne sont pas simulés.</p>
+            <h3>Capacité de remboursement ne vaut pas accord bancaire</h3><p>Le taux d’endettement utilise le revenu mensuel net avant impôt sur le revenu, les mensualités des crédits existants et le nouveau prêt, assurance comprise. Le seuil usuel de 35 % en France n’est qu’un repère : les dérogations et critères varient selon les banques. Le salaire de base doit permettre de couvrir les dépenses récurrentes sans dépendre des actions attribuées par l’employeur. Le confort budgétaire dépend du revenu après impôt et de toutes les dépenses de vie, que ce ratio ne prend pas en compte.</p>
+            <h3>Une simulation, pas une prévision</h3><p>Les rendements sont des hypothèses constantes, pas des probabilités. Le modèle ne simule ni la volatilité des marchés, ni le risque lié à l’ordre des rendements, ni la vacance locative, ni une stratégie de mise en location, ni une perte d’emploi. Le premier point d’équilibre est le premier mois où l’achat rattrape la location ; cet avantage peut ensuite s’inverser. Les taux, loyers, charges et frais d’achat sont indicatifs, pas des devis vérifiés. À vous d’apprécier la valeur non financière de la stabilité, de la flexibilité et du plaisir d’habiter votre logement.</p>
+          </div></details>
+          <div class="export-row"><span>Exportez votre simulation pour la conserver avant de quitter la page.</span><button id="export" class="button">Exporter les données annuelles (CSV) <span aria-hidden="true">↓</span></button></div>
+        </div>
+      </section>
+    </div>
+    <footer><span>acheter ou louer</span><p>Un outil d’aide à la décision, ni une recommandation ni une offre de prêt.<br>Faites confirmer le financement et la fiscalité par des professionnels qualifiés.</p></footer>
+  </main>
+  <noscript>Activez JavaScript pour utiliser ce simulateur. Tous les calculs sont effectués dans votre navigateur.</noscript>
+</body>
+</html>
