@@ -9,6 +9,20 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%232b4b40'/%3E%3Cpath d='M12 24L24 13L36 24V36H27V27H21V36H12Z' fill='%23f6f5f0'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./app.js"></script>
+  <!-- Same GA4 property as the blog; do not count local previews. -->
+  <script>
+    if (window.location.hostname === 'k3nz0.github.io') {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-69F120Z18E');
+
+      const tag = document.createElement('script');
+      tag.async = true;
+      tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-69F120Z18E';
+      document.head.appendChild(tag);
+    }
+  </script>
 </head>
 <body>
   <main>
